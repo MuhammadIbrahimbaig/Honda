@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home page</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- font awesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="logoname" href="#">Liberty Electronic
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="d-flex ">
+        <input class="form-control me-2 searchbar" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-white enterbtn" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="#">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="#">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="#">testimonial</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <!-- <button class="btn btn-primary ms-auto btnbar" type="submit">Login</button>
+        <button class="btn btn-primary ms-2 btnbar" type="submit">Signup</button> -->
+        <!-- Button trigger modal -->
+<button type="button"type="submit" class="btn btn-primary ms-auto btnbar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center ">
+        <h4 class="modal-title "class="text-center " id="exampleModalLabel" class="inputbar">Login your Account</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="work">
+        <input type="email" name="email" id="mail" class="form-control mt-4 w-20" placeholder="Enter email address" >
+        <input type="password" name="password" id="code" class="form-control mt-4 w-20" placeholder="Enter your password">
+        <button type="submit" class="btn btn-primary w-100 mt-4 " id="loginhover">Login</button>
+        </form> 
+        <a  href="#"><p class="text-center">forget password</p></a>
+        
+        <h4 class="text-center mt-4">Or log in with</h4>
+        <div class="container text-center">
+        <button class="btn btn-danger mt-4 w-50" type="submit">Google login</button>
+        <button class="btn btn-primary mt-4 w-50" type="submit">Facebook login</button>
+        
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- breadcrumb --> 
+  <div class="container" >
+  <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+    <ul class="breadcrumb mt-3">
+      <li class="breadcrumb-item ms-4"><a href="#">Refrigerators <span class="badge bg-danger ">New</span></a></li> 
+      <li class="breadcrumb-item ms-4"><a href="#">Deep freezer</a></li>
+      <li class="breadcrumb-item ms-4"><a href="#">Led tv</a></li>
+      <li class="breadcrumb-item ms-4"><a href="#">mobile phone</a></li>
+      <li class="breadcrumb-item ms-4"><a href="#">air conditioners</a></li>
+      <li class="breadcrumb-item ms-4"><a href="#">microwave </a></li>
+     
+      
+    </ul>
+    
+  </nav>
+  </div>
+    
+ <!-- carousel start -->
+ <div class="container">
+ <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel"
+ data-bs-interval="2000" data-bs-pause="false">
+
+ <!-- carousel-indicators -->
+ <div class="carousel-indicators">
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+         aria-current="true" aria-label="Slide 1"></button>
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+         aria-label="Slide 2"></button>
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+         aria-label="Slide 3"></button>
+ </div>
+ <!-- carousel-indicators end -->
+
+ <!-- carousel image slide  and paragraph  -->
+ <div class="carousel-inner">
+     <div class="carousel-item active">
+         <img src="image/carousel1.jpg" class="d-block w-100 " alt="load">
+         
+     </div>
+     <div class="carousel-item">
+         <img src="image/carousel2.jpg" class="d-block w-100" alt="load">
+         
+     </div>
+     <div class="carousel-item">
+         <img src="image/slider3.jpg" class="d-block w-100" alt="load">
+        
+     </div>
+     
+ </div>
+ <!-- carousel-control-next-prev -->
+ <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+     data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Previous</span>
+ </button>
+ <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+     data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
+ </button>
+</div>
+</div>
+<!-- carousel-control-next-prev  end-->
+
+<!-- trending product -->
+
+<section class="mt-5"><br>
+  <div class="text-center ">
+    <p class="text-primary">Fully made website</p>
+      <h1 class="text-dark text-uppercase">Trending products</h1><br><br>
+      
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xxl-4 col-lg-4 col-12 ">
+        <div class="card text-center "id="outlinerem" style="width: 18rem;">
+          <img src="image/product1.jpg" class="card-img-top" alt="...">
+       
+
+          <div class="card-body text-center">
+            <p class="card-title text-primary">Dawlance Refrigerator 9169 WB Avante Pearl Red (GD)</p>
+            <p class="card-text mt-3 text-danger">Rs.20,000</p>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning"  aria-hidden="true"></i>
+            <p class="card-text mt-3 text-success"><i class="fa fa-circle" aria-hidden="true"> in the stock</i>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xxl-4 col-lg-4 col-12 ">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="image/product2.jpg" class="card-img-top " alt="...">
+       
+
+          <div class="card-body text-center">
+            <p class="card-title text-primary">changhong ruba 40" smart LED tv  40x7i</p>
+            <p class="card-text mt-3 text-danger">Rs.20,000</p>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star " aria-hidden="true"></i>
+            <i class="fa fa-star "  aria-hidden="true"></i>
+            <p class="card-text mt-3 text-success"><i class="fa fa-circle" aria-hidden="true"> in the stock</i>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xxl-4 col-lg-4 col-12 ">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="image/product4.jpg" class="card-img-top " alt="...">
+       
+
+          <div class="card-body text-center">
+            <p class="card-title text-primary">Dawlance 1.5 ton inverter air conditioner chrome silver foil</p>
+            <p class="card-text mt-3 text-danger">Rs.149,000</p>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star "  aria-hidden="true"></i>
+            <p class="card-text mt-3 text-success"><i class="fa fa-circle" aria-hidden="true"> in the stock</i>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product row 2 start -->
+    <div class="row mt-5">
+      <div class="col-md-4 col-xxl-4 col-lg-4 col-12 ">
+        <div class="card text-center "id="outlinerem" style="width: 18rem;">
+          <img src="image/product5.jpg" class="card-img-top" alt="...">
+       
+
+          <div class="card-body text-center">
+            <p class="card-title text-primary">Haylou solar plus Rt3 smartwatch</p>
+            <p class="card-text mt-3 text-danger">Rs.10,999 <span class="text-secondary"><s>12,500</s></span></p>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning"  aria-hidden="true"></i>
+            <p class="card-text mt-3 text-success"><i class="fa fa-circle" aria-hidden="true"> in the stock</i>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xxl-4 col-lg-4 col-12 ">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="image/product6.jpg" class="card-img-top " alt="...">
+       
+
+          <div class="card-body text-center">
+            <p class="card-title text-primary">homage water dispenser HWD-8975 blue</p>
+            <p class="card-text mt-3 text-danger">Rs.25,000</p>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star " aria-hidden="true"></i>
+            <i class="fa fa-star "  aria-hidden="true"></i>
+            <p class="card-text mt-3 text-danger"><i class="fa fa-circle" aria-hidden="true"> out of stock</i>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xxl-4 col-lg-4 col-12 ">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="image/product7.jpg" class="card-img-top " alt="...">
+       
+
+          <div class="card-body text-center">
+            <p class="card-title text-primary">mobile and tablet earphone skull candy inked rainbow</p>
+            <p class="card-text mt-3 text-danger">Rs.1,700<span class="text-secondary"><s>12,500</s></span></p>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star "  aria-hidden="true"></i>
+            <p class="card-text mt-3 text-success"><i class="fa fa-circle" aria-hidden="true"> in the stock</i>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- testimonial review -->
+<section class="mt-5"><br>
+  <div class="text-center ">
+    <p class="text-primary">Fully made website</p>
+      <h1 class="text-dark text-uppercase">our Good customers</h1>
+      <hr class="w-25 mx-auto">
+  </div>
+  <div class="container"><br>
+    <div class="row gx-2 gy-3">
+      <div class="col-md-4 col-xxl-4 col-lg-4 col-12 ">
+        <div class="card text-center cardlogo" style="width: 18rem;">
+          <img src="image/pexels-amir-esrafili-6274712.jpg" class="card-img-top mt-3" alt="...">
+       
+
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Card title</h5>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning"  aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xxl-4 col-lg-4 col-12">
+        <div class="card text-center cardlogo" style="width: 18rem;">
+          <img src="image/pexels-amir-esrafili-6304258.jpg" class="card-img-top mt-3" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Card title</h5>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xxl-4 col-lg-4 col-12">
+        <div class="card text-center cardlogo" style="width: 18rem;">
+          <img src="image/pexels-chloe-1043471.jpg" class="card-img-top mt-3" alt="...">
+          <div class="card-body">
+            <p class="card-text">"Some quick example text to build on the card title and make up the bulk of the card's content".</p>
+            <h5 class="card-title">Card title</h5>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            <i class="fa fa-star text-warning" aria-hidden="true"></i>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+<!-- testimonial end-- -->
+
+<!-- footer start -->
+<section class="bg-light mt-5" >
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-3 col-xxl-3 col-lg-3 col-12 ">
+              <h5>customers services</h5>
+              <div><a href="#" class="text-dark">Register complaint</a></div>
+              <div><a href="#" class="text-dark">Contact us</a></div>
+              <div><a href="#" class="text-dark">Help center</a></div>
+              <div><a href="#" class="text-dark">Feedback</a></div>
+              <a href="#" class="text-dark">other status</a>
+
+          </div>
+
+          <div class="col-md-3 col-xxl-3 col-lg-3 col-12 ">
+            <h5 >company</h5>
+            <div><a href="#" class="text-dark">About</a></div>
+            <div><a href="#" class="text-dark">career</a></div>
+            <div><a href="#" class="text-dark">privacy</a></div>
+            <div><a href="#" class="text-dark">Term</a></div>
+
+        </div>
+
+        <div class="col-md-3 col-xxl-3 col-lg-3 col-12 ">
+          <h5>Account</h5>
+          <div><a href="#" class="text-dark">Login/register</a></div>
+          <div><a href="#" class="text-dark">Account dashboard</a></div>
+          <div><a href="#" class="text-dark">Address book</a></div>
+          <div><a href="#" class="text-dark">my orders</a></div>
+          <div><a href="#" class="text-dark">my wishlist</a></div>
+
+      </div>
+
+      <div class="col-md-3 col-xxl-3 col-lg-3 col-12 ">
+        <h5>sign up for new offer</h5>
+        <div class="input-group">
+          <input type="email" class="form-control w-25" placeholder="enter email id" aria-label="Recipient's username ">
+          <button class="btn btn-primary" type="button">enter</button>
+    </div>
+          <p>This site is protected and tha google <span class="text-primary">Privacy policy</span> and <span class="text-primary">Term service</span> apply</p>
+          <!-- icon -->
+          <div class="footericon">
+      <i class="fa fa-facebook-square " aria-hidden="true"></i>
+      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+      <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </div>
+      </div>
+      
+
+  </div>
+</section>
+<!-- second footer start -->
+<section class="bg-light">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12">
+<p >© 2023 Liberty Electronic.pk</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="javascript/validation.js
+    "></script>
+</body>
+</html>
